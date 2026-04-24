@@ -18,10 +18,6 @@ Example: SELECT * FROM Movies;
 psql (18.0 (Debian 18.0-1.pgdg13+3))
 Type "help" for help.
 
-postgres=#
-postgres=# docker run --rm -v $(pwd)/script.sql:/script.sql -e SQL_FILE=/script.sql bsalgert/postgres:v1 > result.log
-postgres-#
-postgres-# \q
 nevio@DESKTOP-U5HVH5T:/mnt/c/Users/Brygida/Documents/docker$ ls
 nevio@DESKTOP-U5HVH5T:/mnt/c/Users/Brygida/Documents/docker$ docker run --rm -v $(pwd)/script.sql:/script.sql -e SQL_FILE=/script.sql bsalgert/postgres:v1 > result.log
 permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
@@ -96,12 +92,6 @@ root@c5bf3d3ccc5c:/# psql -U postgres -d postgres
 psql (18.0 (Debian 18.0-1.pgdg13+3))
 Type "help" for help.
 
-postgres=# SELECT* FROM Movies
-postgres-# SELECT * FROM Movies;
-ERROR:  syntax error at or near "SELECT"
-LINE 2: SELECT * FROM Movies;
-        ^
-postgres=# select * from Movies;
 postgres=# exit
 root@c5bf3d3ccc5c:/# exit
 exit
@@ -116,24 +106,40 @@ mydb
 nevio@DESKTOP-U5HVH5T:/mnt/c/Users/Brygida/Documents/docker$ sudo docker ps
 CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
 Aufgabe 1
-
 Erstellen Sie jeweils eine Abfrage, um die Tupel der Tabelle Movies anzuzeigen.
+
+## select * from Movies;
+
 Aufgabe 2
-
 Erstellen Sie eine Abfrage, um jeweils Titel, Erscheinungsdatum und Genre_ID aller Filme anzuzeigen, wobei die Ausgabe nach Titel sortiert sein soll.
+
+## select title, ReleaseDate, Genre_ID from Movies order by title;
+
 Aufgabe 3
-
 Erstellen Sie eine Abfrage, um die Filmverleihfirmen anzuzeigen. Unterdrücken Sie die mehrfache Ausgabe der Filmverleihfirmen.
+
+## select distinct Distribution from Movies;
+
 Aufgabe 4a
-
 Erstellen Sie eine Abfrage, um ID, Titel und Gewinn jener Filme anzuzeigen, die mehr als 600 Millionen Dollar eingespielt haben.
+
+## select Movie_ID, title, Profit from Movies where Profit > 600000000;
+
 Aufgabe 4b
-
 Ändern Sie die Abfrage aus Aufgabe 4a dahingehend, dass Titel und Einspielergebnis aller Filme angezeigt werden, deren Ergebnis zwischen 600 und 700 Millionen liegt.
+
+## select title, OpeningWeek from Movies where Profit between 600000000 and 700000000;
+
 Aufgabe 5a
-
 Zeigen Sie Titel, Budget und Gewinn aller Filme an, die eine Fortsetzung eines anderen Films sind. Sortieren Sie die Daten in absteigender Reihenfolge nach Gewinn.
-Aufgabe 5b
 
+## select title, Budget, Profit from Movies where SequelOf is not null;
+
+Aufgabe 5b
 Modifizieren Sie Ihre Anfrage, so dass Budget und Gewinn als eine Summe mit Namen "UMSATZ" ausgegeben wird.
+
+## select title, (Profit - Budget) as Umsatz from Movies where SequelOf is not null;
+
