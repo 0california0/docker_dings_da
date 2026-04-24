@@ -3,441 +3,14 @@ readme datei für das praktikum
 
 hier passieren sachen
 
-Microsoft Windows [Version 10.0.26200.8037]
-(c) Microsoft Corporation. Alle Rechte vorbehalten.
-
-C:\Users\Brygida>^wsl
-nevio@DESKTOP-U5HVH5T:/mnt/c/Users/Brygida$ docker
-Usage:  docker [OPTIONS] COMMAND
-
-A self-sufficient runtime for containers
-
-Common Commands:
-  run         Create and run a new container from an image
-  exec        Execute a command in a running container
-  ps          List containers
-  build       Build an image from a Dockerfile
-  bake        Build from a file
-  pull        Download an image from a registry
-  push        Upload an image to a registry
-  images      List images
-  login       Authenticate to a registry
-  logout      Log out from a registry
-  search      Search Docker Hub for images
-  version     Show the Docker version information
-  info        Display system-wide information
-
-Management Commands:
-  agent*      Docker AI Agent Runner
-  ai*         Docker AI Agent - Ask Gordon
-  builder     Manage builds
-  buildx*     Docker Buildx
-  checkpoint  Manage checkpoints
-  compose*    Docker Compose
-  container   Manage containers
-  context     Manage contexts
-  debug*      Get a shell into any image or container
-  desktop*    Docker Desktop commands
-  dhi*        CLI for managing Docker Hardened Images
-  extension*  Manages Docker extensions
-  image       Manage images
-  init*       Creates Docker-related starter files for your project
-  manifest    Manage Docker image manifests and manifest lists
-  mcp*        Docker MCP Plugin
-  model*      Docker Model Runner
-  network     Manage networks
-  offload*    Docker Offload
-  plugin      Manage plugins
-  sandbox*
-  sbom*       View the packaged-based Software Bill Of Materials (SBOM) for an image
-  scout*      Docker Scout
-  system      Manage Docker
-  volume      Manage volumes
-
-Swarm Commands:
-  config      Manage Swarm configs
-  node        Manage Swarm nodes
-  secret      Manage Swarm secrets
-  service     Manage Swarm services
-  stack       Manage Swarm stacks
-  swarm       Manage Swarm
-
-Commands:
-  attach      Attach local standard input, output, and error streams to a running container
-  commit      Create a new image from a container's changes
-  cp          Copy files/folders between a container and the local filesystem
-  create      Create a new container
-  diff        Inspect changes to files or directories on a container's filesystem
-  events      Get real time events from the server
-  export      Export a container's filesystem as a tar archive
-  history     Show the history of an image
-  import      Import the contents from a tarball to create a filesystem image
-  inspect     Return low-level information on Docker objects
-  kill        Kill one or more running containers
-  load        Load an image from a tar archive or STDIN
-  logs        Fetch the logs of a container
-  pause       Pause all processes within one or more containers
-  port        List port mappings or a specific mapping for the container
-  rename      Rename a container
-  restart     Restart one or more containers
-  rm          Remove one or more containers
-  rmi         Remove one or more images
-  save        Save one or more images to a tar archive (streamed to STDOUT by default)
-  start       Start one or more stopped containers
-  stats       Display a live stream of container(s) resource usage statistics
-  stop        Stop one or more running containers
-  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
-  top         Display the running processes of a container
-  unpause     Unpause all processes within one or more containers
-  update      Update configuration of one or more containers
-  wait        Block until one or more containers stop, then print their exit codes
-
-Global Options:
-      --config string      Location of client config files (default "/home/nevio/.docker")
-  -c, --context string     Name of the context to use to connect to the daemon (overrides DOCKER_HOST env var and
-                           default context set with "docker context use")
-  -D, --debug              Enable debug mode
-  -H, --host string        Daemon socket to connect to
-  -l, --log-level string   Set the logging level ("debug", "info", "warn", "error", "fatal") (default "info")
-      --tls                Use TLS; implied by --tlsverify
-      --tlscacert string   Trust certs signed only by this CA (default "/home/nevio/.docker/ca.pem")
-      --tlscert string     Path to TLS certificate file (default "/home/nevio/.docker/cert.pem")
-      --tlskey string      Path to TLS key file (default "/home/nevio/.docker/key.pem")
-      --tlsverify          Use TLS and verify the remote
-  -v, --version            Print version information and quit
-
-Run 'docker COMMAND --help' for more information on a command.
-
-For more help on how to use Docker, head to https://docs.docker.com/go/guides/
-nevio@DESKTOP-U5HVH5T:/mnt/c/Users/Brygida$ docker run -it --rm bsalgert/postgres:v1
-permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
-nevio@DESKTOP-U5HVH5T:/mnt/c/Users/Brygida$ sudo docker run -it --rm bsalgert/postgres:v1
-[sudo] password for nevio:
-Unable to find image 'bsalgert/postgres:v1' locally
-v1: Pulling from bsalgert/postgres
-d7ecded7702a: Pull complete
-daee9001e881: Pull complete
-020ec506a9a9: Pull complete
-6fb1887789d5: Pull complete
-cf13711e2d93: Pull complete
-99c86b3ee082: Pull complete
-d15ec67b8f25: Pull complete
-4901ed08c960: Pull complete
-4d36f395949b: Pull complete
-79f0f9d42419: Pull complete
-7e5e79cb13ce: Pull complete
-f4ece806f018: Pull complete
-433f50e81b26: Pull complete
-ff87f7896919: Pull complete
-fbffd8a8bfbd: Pull complete
-9247a2ce79dd: Pull complete
-Digest: sha256:142fd96174fbbd24996e1e3c9b6c09720caf86c9c8dd2444b43e3f5cdc0fecd0
-Status: Downloaded newer image for bsalgert/postgres:v1
-localhost:5432 - no response
-localhost:5432 - no response
-localhost:5432 - no response
-localhost:5432 - no response
-localhost:5432 - no response
-localhost:5432 - no response
-localhost:5432 - no response
-localhost:5432 - accepting connections
-Database is ready!
-Use \q to exit
-Example: SELECT * FROM Movies;
-psql (18.0 (Debian 18.0-1.pgdg13+3))
-Type "help" for help.
-
-postgres=# SELECT * FROM Movies
-postgres-# \q
-nevio@DESKTOP-U5HVH5T:/mnt/c/Users/Brygida$ cd "C:\Users\Brygida\Documents\docker"
--bash: cd: C:\Users\Brygida\Documents\docker: No such file or directory
-nevio@DESKTOP-U5HVH5T:/mnt/c/Users/Brygida$ exit
-logout
-
 C:\Users\Brygida>cd C:\Users\Brygida\Documents\docker
 
 C:\Users\Brygida\Documents\docker>docker
-Usage:  docker [OPTIONS] COMMAND
-
-A self-sufficient runtime for containers
-
-Common Commands:
-  run         Create and run a new container from an image
-  exec        Execute a command in a running container
-  ps          List containers
-  build       Build an image from a Dockerfile
-  bake        Build from a file
-  pull        Download an image from a registry
-  push        Upload an image to a registry
-  images      List images
-  login       Authenticate to a registry
-  logout      Log out from a registry
-  search      Search Docker Hub for images
-  version     Show the Docker version information
-  info        Display system-wide information
-
-Management Commands:
-  agent*      Docker AI Agent Runner
-  ai*         Docker AI Agent - Ask Gordon
-  builder     Manage builds
-  buildx*     Docker Buildx
-  compose*    Docker Compose
-  container   Manage containers
-  context     Manage contexts
-  debug*      Get a shell into any image or container
-  desktop*    Docker Desktop commands
-  dhi*        CLI for managing Docker Hardened Images
-  extension*  Manages Docker extensions
-  image       Manage images
-  init*       Creates Docker-related starter files for your project
-  manifest    Manage Docker image manifests and manifest lists
-  mcp*        Docker MCP Plugin
-  model*      Docker Model Runner
-  network     Manage networks
-  offload*    Docker Offload
-  plugin      Manage plugins
-  sandbox*    Docker Sandbox
-  sbom*       View the packaged-based Software Bill Of Materials (SBOM) for an image
-  scout*      Docker Scout
-  system      Manage Docker
-  volume      Manage volumes
-
-Swarm Commands:
-  swarm       Manage Swarm
-
-Commands:
-  attach      Attach local standard input, output, and error streams to a running container
-  commit      Create a new image from a container's changes
-  cp          Copy files/folders between a container and the local filesystem
-  create      Create a new container
-  diff        Inspect changes to files or directories on a container's filesystem
-  events      Get real time events from the server
-  export      Export a container's filesystem as a tar archive
-  history     Show the history of an image
-  import      Import the contents from a tarball to create a filesystem image
-  inspect     Return low-level information on Docker objects
-  kill        Kill one or more running containers
-  load        Load an image from a tar archive or STDIN
-  logs        Fetch the logs of a container
-  pause       Pause all processes within one or more containers
-  port        List port mappings or a specific mapping for the container
-  rename      Rename a container
-  restart     Restart one or more containers
-  rm          Remove one or more containers
-  rmi         Remove one or more images
-  save        Save one or more images to a tar archive (streamed to STDOUT by default)
-  start       Start one or more stopped containers
-  stats       Display a live stream of container(s) resource usage statistics
-  stop        Stop one or more running containers
-  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
-  top         Display the running processes of a container
-  unpause     Unpause all processes within one or more containers
-  update      Update configuration of one or more containers
-  wait        Block until one or more containers stop, then print their exit codes
-
-Global Options:
-      --config string      Location of client config files (default
-                           "C:\\Users\\Brygida\\.docker")
-  -c, --context string     Name of the context to use to connect to the
-                           daemon (overrides DOCKER_HOST env var and
-                           default context set with "docker context use")
-  -D, --debug              Enable debug mode
-  -H, --host string        Daemon socket to connect to
-  -l, --log-level string   Set the logging level ("debug", "info",
-                           "warn", "error", "fatal") (default "info")
-      --tls                Use TLS; implied by --tlsverify
-      --tlscacert string   Trust certs signed only by this CA (default
-                           "C:\\Users\\Brygida\\.docker\\ca.pem")
-      --tlscert string     Path to TLS certificate file (default
-                           "C:\\Users\\Brygida\\.docker\\cert.pem")
-      --tlskey string      Path to TLS key file (default
-                           "C:\\Users\\Brygida\\.docker\\key.pem")
-      --tlsverify          Use TLS and verify the remote
-  -v, --version            Print version information and quit
-
-Run 'docker COMMAND --help' for more information on a command.
-
-For more help on how to use Docker, head to https://docs.docker.com/go/guides/
 
 C:\Users\Brygida\Documents\docker>wsl
 nevio@DESKTOP-U5HVH5T:/mnt/c/Users/Brygida/Documents/docker$ docker
-Usage:  docker [OPTIONS] COMMAND
 
-A self-sufficient runtime for containers
-
-Common Commands:
-  run         Create and run a new container from an image
-  exec        Execute a command in a running container
-  ps          List containers
-  build       Build an image from a Dockerfile
-  bake        Build from a file
-  pull        Download an image from a registry
-  push        Upload an image to a registry
-  images      List images
-  login       Authenticate to a registry
-  logout      Log out from a registry
-  search      Search Docker Hub for images
-  version     Show the Docker version information
-  info        Display system-wide information
-
-Management Commands:
-  agent*      Docker AI Agent Runner
-  ai*         Docker AI Agent - Ask Gordon
-  builder     Manage builds
-  buildx*     Docker Buildx
-  checkpoint  Manage checkpoints
-  compose*    Docker Compose
-  container   Manage containers
-  context     Manage contexts
-  debug*      Get a shell into any image or container
-  desktop*    Docker Desktop commands
-  dhi*        CLI for managing Docker Hardened Images
-  extension*  Manages Docker extensions
-  image       Manage images
-  init*       Creates Docker-related starter files for your project
-  manifest    Manage Docker image manifests and manifest lists
-  mcp*        Docker MCP Plugin
-  model*      Docker Model Runner
-  network     Manage networks
-  offload*    Docker Offload
-  plugin      Manage plugins
-  sandbox*
-  sbom*       View the packaged-based Software Bill Of Materials (SBOM) for an image
-  scout*      Docker Scout
-  system      Manage Docker
-  volume      Manage volumes
-
-Swarm Commands:
-  config      Manage Swarm configs
-  node        Manage Swarm nodes
-  secret      Manage Swarm secrets
-  service     Manage Swarm services
-  stack       Manage Swarm stacks
-  swarm       Manage Swarm
-
-Commands:
-  attach      Attach local standard input, output, and error streams to a running container
-  commit      Create a new image from a container's changes
-  cp          Copy files/folders between a container and the local filesystem
-  create      Create a new container
-  diff        Inspect changes to files or directories on a container's filesystem
-  events      Get real time events from the server
-  export      Export a container's filesystem as a tar archive
-  history     Show the history of an image
-  import      Import the contents from a tarball to create a filesystem image
-  inspect     Return low-level information on Docker objects
-  kill        Kill one or more running containers
-  load        Load an image from a tar archive or STDIN
-  logs        Fetch the logs of a container
-  pause       Pause all processes within one or more containers
-  port        List port mappings or a specific mapping for the container
-  rename      Rename a container
-  restart     Restart one or more containers
-  rm          Remove one or more containers
-  rmi         Remove one or more images
-  save        Save one or more images to a tar archive (streamed to STDOUT by default)
-  start       Start one or more stopped containers
-  stats       Display a live stream of container(s) resource usage statistics
-  stop        Stop one or more running containers
-  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
-  top         Display the running processes of a container
-  unpause     Unpause all processes within one or more containers
-  update      Update configuration of one or more containers
-  wait        Block until one or more containers stop, then print their exit codes
-
-Global Options:
-      --config string      Location of client config files (default "/home/nevio/.docker")
-  -c, --context string     Name of the context to use to connect to the daemon (overrides DOCKER_HOST env var and
-                           default context set with "docker context use")
-  -D, --debug              Enable debug mode
-  -H, --host string        Daemon socket to connect to
-  -l, --log-level string   Set the logging level ("debug", "info", "warn", "error", "fatal") (default "info")
-      --tls                Use TLS; implied by --tlsverify
-      --tlscacert string   Trust certs signed only by this CA (default "/home/nevio/.docker/ca.pem")
-      --tlscert string     Path to TLS certificate file (default "/home/nevio/.docker/cert.pem")
-      --tlskey string      Path to TLS key file (default "/home/nevio/.docker/key.pem")
-      --tlsverify          Use TLS and verify the remote
-  -v, --version            Print version information and quit
-
-Run 'docker COMMAND --help' for more information on a command.
-
-For more help on how to use Docker, head to https://docs.docker.com/go/guides/
-nevio@DESKTOP-U5HVH5T:/mnt/c/Users/Brygida/Documents/docker$ SELECT * FROM Movies
-SELECT: command not found
-nevio@DESKTOP-U5HVH5T:/mnt/c/Users/Brygida/Documents/docker$ docker run -it --rm bsalgert/postgres:v1
-permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
 nevio@DESKTOP-U5HVH5T:/mnt/c/Users/Brygida/Documents/docker$ sudo docker run -it --rm bsalgert/postgres:v1
-[sudo] password for nevio:
-localhost:5432 - no response
-localhost:5432 - no response
-localhost:5432 - no response
-localhost:5432 - no response
-localhost:5432 - no response
-localhost:5432 - accepting connections
-Database is ready!
-Use \q to exit
-Example: SELECT * FROM Movies;
-psql (18.0 (Debian 18.0-1.pgdg13+3))
-Type "help" for help.
-
-postgres=# SELECT * FROM Movies
-postgres-# \q
-nevio@DESKTOP-U5HVH5T:/mnt/c/Users/Brygida/Documents/docker$ sudo docker run -it --rm bsalgert/postgres:v1
-localhost:5432 - no response
-localhost:5432 - no response
-localhost:5432 - no response
-localhost:5432 - no response
-localhost:5432 - no response
-localhost:5432 - accepting connections
-Database is ready!
-Use \q to exit
-Example: SELECT * FROM Movies;
-psql (18.0 (Debian 18.0-1.pgdg13+3))
-Type "help" for help.
-
-postgres=# docker run --rm -v $(pwd)/script.sql:/script.sql -e SQL_FILE=/script.sql bsalgert/postgres:v1 > result.log
-postgres-# docker run -d --name mydb bsalgert/postgres:v1 /demon.sh
-postgres-# docker run --rm -v $(pwd)/script.sql:/script.sql -e SQL_FILE=/script.sql bsalgert/postgres:v1 > result.log
-postgres-# cd C:\Users\Brygida\Documents\docker
-invalid command \Users
-Try \? for help.
-postgres-# \q
-nevio@DESKTOP-U5HVH5T:/mnt/c/Users/Brygida/Documents/docker$ docker run -it --rm bsalgert/postgres:v1
-permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
-nevio@DESKTOP-U5HVH5T:/mnt/c/Users/Brygida/Documents/docker$ sudo docker run -it --rm bsalgert/postgres:v1
-localhost:5432 - no response
-localhost:5432 - no response
-localhost:5432 - no response
-localhost:5432 - no response
-localhost:5432 - accepting connections
-Database is ready!
-Use \q to exit
-Example: SELECT * FROM Movies;
-psql (18.0 (Debian 18.0-1.pgdg13+3))
-Type "help" for help.
-
-postgres=# cd C:\Users\Brygida\Documents\docker
-invalid command \Users
-Try \? for help.
-postgres-# docker run --rm -v $(pwd)/script.sql:/script.sql -e SQL_FILE=/script.sql bsalgert/postgres:v1 > result.log
-postgres-# docker ps
-postgres-# exit
-Use \q to quit.
-postgres-# \q
-nevio@DESKTOP-U5HVH5T:/mnt/c/Users/Brygida/Documents/docker$ docker ps
-permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
-nevio@DESKTOP-U5HVH5T:/mnt/c/Users/Brygida/Documents/docker$ sudo docker ps
-CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
-nevio@DESKTOP-U5HVH5T:/mnt/c/Users/Brygida/Documents/docker$ docker run -it --rm bsalgert/postgres:v1
-permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
-nevio@DESKTOP-U5HVH5T:/mnt/c/Users/Brygida/Documents/docker$ sudo docker run -it --rm bsalgert/postgres:v1
-
-
-
-localhost:5432 - no response
-localhost:5432 - no response
-localhost:5432 - no response
-localhost:5432 - no response
 localhost:5432 - accepting connections
 Database is ready!
 Use \q to exit
@@ -485,14 +58,11 @@ nevio@DESKTOP-U5HVH5T:/mnt/c/Users/Brygida/Documents/docker$ sudo docker run --r
 nevio@DESKTOP-U5HVH5T:/mnt/c/Users/Brygida/Documents/docker$ ls
 result.log  script.sql
 nevio@DESKTOP-U5HVH5T:/mnt/c/Users/Brygida/Documents/docker$ cat result.log
-localhost:5432 - no response
-localhost:5432 - no response
-localhost:5432 - no response
-localhost:5432 - rejecting connections
+
 localhost:5432 - accepting connections
 Database is ready!
 Use \q to exit
-Example: SELECT * FROM Movies;
+
 SELECT * FROM Movies;
  movie_id |                        title                        | releasedate | genre_id |  budget   | openingweek |  profit   | runtime | certificate | sequelof |        distribution
 ----------+-----------------------------------------------------+-------------+----------+-----------+-------------+-----------+---------+-------------+----------+----------------------------
@@ -545,4 +115,25 @@ sudo docker ps
 mydb
 nevio@DESKTOP-U5HVH5T:/mnt/c/Users/Brygida/Documents/docker$ sudo docker ps
 CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
-nevio@DESKTOP-U5HVH5T:/mnt/c/Users/Brygida/Documents/docker$
+
+Aufgabe 1
+
+Erstellen Sie jeweils eine Abfrage, um die Tupel der Tabelle Movies anzuzeigen.
+Aufgabe 2
+
+Erstellen Sie eine Abfrage, um jeweils Titel, Erscheinungsdatum und Genre_ID aller Filme anzuzeigen, wobei die Ausgabe nach Titel sortiert sein soll.
+Aufgabe 3
+
+Erstellen Sie eine Abfrage, um die Filmverleihfirmen anzuzeigen. Unterdrücken Sie die mehrfache Ausgabe der Filmverleihfirmen.
+Aufgabe 4a
+
+Erstellen Sie eine Abfrage, um ID, Titel und Gewinn jener Filme anzuzeigen, die mehr als 600 Millionen Dollar eingespielt haben.
+Aufgabe 4b
+
+Ändern Sie die Abfrage aus Aufgabe 4a dahingehend, dass Titel und Einspielergebnis aller Filme angezeigt werden, deren Ergebnis zwischen 600 und 700 Millionen liegt.
+Aufgabe 5a
+
+Zeigen Sie Titel, Budget und Gewinn aller Filme an, die eine Fortsetzung eines anderen Films sind. Sortieren Sie die Daten in absteigender Reihenfolge nach Gewinn.
+Aufgabe 5b
+
+Modifizieren Sie Ihre Anfrage, so dass Budget und Gewinn als eine Summe mit Namen "UMSATZ" ausgegeben wird.
