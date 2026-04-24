@@ -3,6 +3,23 @@ readme datei für das praktikum
 
 hier passieren sachen
 
+
+## docker starten und log-Datei erstellen
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+C:\Users\Brygida>cd "C:\Users\Brygida\Documents\docker\praktikum_2"
+>
+C:\Users\Brygida\Documents\docker\praktikum_2>wsl
+>
+nevio@DESKTOP-U5HVH5T:/mnt/c/Users/Brygida/Documents/docker/praktikum_2$ docker
+>
+nevio@DESKTOP-U5HVH5T:/mnt/c/Users/Brygida/Documents/docker/praktikum_2$ docker run --rm -v $(pwd)/script.sql:/script.sql -e SQL_FILE=/script.sql bsalgert/postgres:v1 > result.log
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
 C:\Users\Brygida>cd C:\Users\Brygida\Documents\docker
 
 C:\Users\Brygida\Documents\docker>docker
